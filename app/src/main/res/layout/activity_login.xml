@@ -12,7 +12,8 @@
         android:layout_height="200dp"
         app:srcCompat="@drawable/logo"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent"/>
+        app:layout_constraintTop_toTopOf="parent"
+        android:contentDescription="@string/logo" />
 
     <TextView
         android:id="@+id/title"
@@ -34,13 +35,14 @@
         android:layout_marginTop="20dp"
         android:layout_marginEnd="40dp"
         android:background="@drawable/custom_shape"
+        android:fontFamily="@font/montserrat_regular"
         android:hint="Alamat Email"
         android:minHeight="48dp"
         android:textSize="15sp"
-        android:fontFamily="@font/montserrat_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title" />
+        app:layout_constraintTop_toBottomOf="@+id/title"
+        tools:ignore="TextContrastCheck" />
 
     <EditText
         android:id="@+id/edt_password"
@@ -51,27 +53,30 @@
         android:layout_marginEnd="40dp"
         android:background="@drawable/custom_shape"
         android:drawableRight="@drawable/baseline_remove_red_eye_24"
+        android:fontFamily="@font/montserrat_regular"
         android:hint="Kata Sandi"
+        android:inputType="textPassword"
         android:minHeight="48dp"
         android:textSize="15sp"
-        android:fontFamily="@font/montserrat_regular"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_email" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_email"
+        tools:ignore="TextContrastCheck" />
 
     <TextView
         android:id="@+id/forgot_pw"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginTop="5dp"
+        android:fontFamily="@font/montserrat_regular"
         android:paddingEnd="40dp"
         android:text="Lupa password?"
         android:textAlignment="textEnd"
         android:textColor="@color/green"
         android:textSize="14sp"
-        android:fontFamily="@font/montserrat_regular"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/edt_password" />
+        app:layout_constraintTop_toBottomOf="@+id/edt_password"
+        tools:ignore="TextContrastCheck" />
 
     <Button
         android:id="@+id/button"
@@ -112,12 +117,13 @@
             android:layout_height="wrap_content"
             android:layout_marginStart="10dp"
             android:layout_marginEnd="20dp"
-            android:text="Atau"
             android:fontFamily="@font/montserrat_regular"
+            android:text="Atau"
             android:textAlignment="center"
             android:textColor="@color/grey"
             android:textSize="15sp"
-            app:layout_constraintStart_toStartOf="parent" />
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="TextContrastCheck" />
 
         <View
             android:layout_width="200dp"
@@ -130,19 +136,20 @@
         android:id="@+id/button2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:backgroundTint="@color/grey"
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
+        android:backgroundTint="@color/grey"
+        android:fontFamily="@font/montserrat_semibold"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
         android:text="Masuk dengan Google"
         android:textSize="16sp"
-        android:fontFamily="@font/montserrat_semibold"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.5"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/button" />
+        app:layout_constraintTop_toBottomOf="@+id/button"
+        tools:ignore="TextContrastCheck" />
 
     <LinearLayout
         android:id="@+id/ly_toRegister"
@@ -166,10 +173,11 @@
             android:id="@+id/to_register2"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:fontFamily="@font/montserrat_medium"
+            android:linksClickable="true"
             android:text="Daftar"
             android:textColor="@color/green"
             android:textSize="15sp"
-            android:fontFamily="@font/montserrat_medium"
-            android:linksClickable="true"/>
+            tools:ignore="TextContrastCheck" />
     </LinearLayout>
 </androidx.constraintlayout.widget.ConstraintLayout>
