@@ -3,10 +3,9 @@ package com.example.macrochallenge9
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 
-class ScrollPopulerWisata : AppCompatActivity() {
+class ScrollBannerPromosi : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_scroll_populer_wisata)
-
+        setContentView(R.layout.activity_scroll_banner_promosi)
     }
 }

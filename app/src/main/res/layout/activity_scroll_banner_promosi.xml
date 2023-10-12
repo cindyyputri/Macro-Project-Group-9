@@ -3,8 +3,8 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
-    android:layout_height="170dp"
-    tools:context=".ScrollPopulerWisata">
+    android:layout_height="match_parent"
+    tools:context=".ScrollBannerPromosi">
 
     <ScrollView
         android:layout_width="match_parent"
@@ -16,39 +16,38 @@
             android:orientation="horizontal" >
 
             <ImageView
-                android:id="@+id/imageView5"
-                android:layout_width="170dp"
+                android:id="@+id/imageBanner5"
+                android:layout_width="350dp"
                 android:layout_height="170dp"
                 app:layout_constraintBottom_toBottomOf="parent"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.0"
                 app:layout_constraintStart_toStartOf="parent"
                 app:layout_constraintTop_toTopOf="parent"
-                app:srcCompat="@drawable/frame3" />
+                app:srcCompat="@drawable/banner" />
 
             <ImageView
-                android:id="@+id/imageView6"
-                android:layout_width="170dp"
+                android:id="@+id/imageBanner2"
+                android:layout_width="350dp"
                 android:layout_height="170dp"
-                android:layout_marginStart="-20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                android:layout_marginStart="-40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageBanner5"
+                app:layout_constraintStart_toEndOf="@+id/imageBanner5"
+                app:layout_constraintTop_toTopOf="@+id/imageBanner5"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/framee" />
+                app:srcCompat="@drawable/banner" />
 
             <ImageView
-                android:id="@+id/imageView7"
-                android:layout_width="170dp"
+                android:id="@+id/imageBanner3"
+                android:layout_width="350dp"
                 android:layout_height="170dp"
-                android:layout_marginStart="-20dp"
-                app:layout_constraintBottom_toBottomOf="@+id/imageView5"
-                app:layout_constraintStart_toEndOf="@+id/imageView5"
-                app:layout_constraintTop_toTopOf="@+id/imageView5"
+                android:layout_marginStart="-40dp"
+                app:layout_constraintBottom_toBottomOf="@+id/imageBanner2"
+                app:layout_constraintStart_toEndOf="@+id/imageBanner2"
+                app:layout_constraintTop_toTopOf="@+id/imageBanner2"
                 app:layout_constraintVertical_bias="0.0"
-                app:srcCompat="@drawable/frame3" />
+                app:srcCompat="@drawable/banner" />
 
         </LinearLayout>
     </ScrollView>
-
 </androidx.constraintlayout.widget.ConstraintLayout>

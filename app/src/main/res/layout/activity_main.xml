@@ -45,6 +45,17 @@
         app:layout_constraintVertical_bias="0.176"
         app:srcCompat="@drawable/option" />
 
+    <include
+        layout="@layout/activity_scroll_banner_promosi"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="10dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/imageView2"
+        />
+
     <TextView
         android:layout_width="70dp"
         android:layout_height="wrap_content"
@@ -60,6 +71,7 @@
         app:layout_constraintVertical_bias="0.566" />
 
     <TextView
+        android:id="@+id/desk"
         android:layout_width="310dp"
         android:layout_height="wrap_content"
         android:fontFamily="@font/montserrat_regular"
@@ -87,6 +99,17 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.564" />
+
+    <include
+        layout="@layout/activity_scroll_populer_wisata"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/desk"
+        />
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/bottomNavigationView"
