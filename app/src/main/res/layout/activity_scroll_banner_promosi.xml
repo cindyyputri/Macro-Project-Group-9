@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     tools:context=".ScrollBannerPromosi">
 
-    <ScrollView
+    <HorizontalScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent">
 
@@ -49,5 +49,5 @@
                 app:srcCompat="@drawable/banner" />
 
         </LinearLayout>
-    </ScrollView>
+    </HorizontalScrollView>
 </androidx.constraintlayout.widget.ConstraintLayout>
