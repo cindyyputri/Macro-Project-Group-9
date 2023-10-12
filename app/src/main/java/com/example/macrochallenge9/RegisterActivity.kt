@@ -15,13 +15,19 @@ class RegisterActivity : AppCompatActivity(), View.OnClickListener {
         setContentView(R.layout.activity_register)
 
         val btnLogin: TextView = findViewById(R.id.to_login2)
-        btnLogin.setOnClickListener(this)
+        btnLogin.setOnClickListener{
+            val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+            startActivity(intent)
+        }
+
+        val btnSignUp: Button = findViewById(R.id.button)
+        btnSignUp.setOnClickListener(this)
     }
 
     override fun onClick(v: View) {
         when(v.id) {
-            R.id.to_login2-> {
-                val intent = Intent(this@RegisterActivity, LoginActivity::class.java)
+            R.id.button-> {
+                val intent = Intent(this@RegisterActivity, MainActivity::class.java)
                 startActivity(intent)
             }
         }
