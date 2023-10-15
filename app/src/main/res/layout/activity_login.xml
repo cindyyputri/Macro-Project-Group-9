@@ -9,11 +9,15 @@
     <ImageView
         android:id="@+id/imageView"
         android:layout_width="wrap_content"
-        android:layout_height="200dp"
-        app:srcCompat="@drawable/logomacro2"
+        android:layout_height="180dp"
+        android:contentDescription="@string/logo"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        android:contentDescription="@string/logo" />
+        app:layout_constraintVertical_bias="0.03"
+        app:srcCompat="@drawable/logomacro2" />
 
     <TextView
         android:id="@+id/title"
@@ -91,6 +95,7 @@
         android:paddingBottom="15dp"
         android:background="@drawable/button"
         android:text="Masuk"
+        android:textAllCaps="false"
         android:textSize="16sp"
         android:textColor="@color/white"
         android:fontFamily="@font/montserrat_semibold"
@@ -142,19 +147,25 @@
         android:layout_marginStart="40dp"
         android:layout_marginTop="40dp"
         android:layout_marginEnd="40dp"
+        android:layout_centerHorizontal="true"
+        android:background="@drawable/button_google"
+        android:drawableStart="@drawable/icongoogle"
+        android:gravity="start|center_horizontal"
+        android:paddingHorizontal="58dp"
         android:fontFamily="@font/montserrat_semibold"
         android:paddingTop="15dp"
         android:paddingBottom="15dp"
-
-        android:background="@drawable/button_google"
+        android:textAlignment="center"
         android:text="Masuk dengan Google"
-        android:textColor="@color/green"
-        android:textSize="16sp"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_bias="0.0"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/button"
+        app:layout_constraintVertical_bias="0.045"
         tools:ignore="TextContrastCheck" />
 
     <LinearLayout
