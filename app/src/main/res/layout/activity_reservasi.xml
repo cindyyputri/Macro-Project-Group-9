@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ReservasiActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Rectangle_green"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <ImageView
+        android:id="@+id/image_back"
+        android:layout_width="35dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="50dp"
+        android:layout_marginStart="30dp"
+        app:srcCompat="@drawable/baseline_arrow_circle_left_24"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+
+    <TextView
+        android:id="@+id/title_reservasi"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Pemesanan"
+        android:textSize="22sp"
+        android:fontFamily="@font/montserrat_bold"
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:layout_marginTop="50dp"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/imageView9"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="130dp"
+        android:layout_marginEnd="30dp"
+        android:background="@drawable/Rectangle_white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <ImageView
+        android:id="@+id/image_destination"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Mask_group"
+        android:layout_marginTop="100dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@id/title_reservasi"/>
+
+    <TextView
+        android:id="@+id/title_dest"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="70dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Taman Mini Indonesia Indah"
+        android:textColor="@color/black"
+        android:textSize="16sp"
+        app:layout_constraintStart_toEndOf="@+id/image_destination"
+        app:layout_constraintTop_toBottomOf="@+id/title_reservasi" />
+
+    <TextView
+        android:id="@+id/desc_dest"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="90dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Taman Mini Indonesia Indah merupakan salah satu taman hiburan bertemakan kebudayaan Indonesia."
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintStart_toEndOf="@+id/image_destination"
+        app:layout_constraintTop_toBottomOf="@+id/title_reservasi" />
+
+    <TextView
+        android:id="@+id/line"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="---------------------------------------------------------------------------------"
+        android:textSize="10sp"
+        android:fontFamily="@font/montserrat_medium"
+        android:textColor="@color/black"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/desc_dest"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/check_in"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Check-in"
+        android:textSize="12sp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:textColor="@color/black"
+        android:layout_marginTop="10dp"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/line"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+    <TextView
+        android:id="@+id/check_out"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="12dp"
+        android:layout_marginEnd="50dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Check-out"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_in" />
+
+    <ImageView
+        android:id="@+id/img_info"
+        android:layout_width="10dp"
+        android:layout_height="10dp"
+        android:background="@drawable/Vector_informasi"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="50dp"
+        app:layout_constraintTop_toBottomOf="@+id/check_out"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/info"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Informasi Lengkap"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="5dp"
+        app:layout_constraintStart_toEndOf="@+id/img_info"
+        app:layout_constraintTop_toBottomOf="@+id/check_out" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/ddetail"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Detail"
+        android:textColor="@color/black"
+        android:textStyle="bold"
+        android:textSize="10sp"
+        android:layout_marginTop="18dp"
+        android:layout_marginStart="170dp"
+        app:layout_constraintStart_toEndOf="@+id/info"
+        app:layout_constraintTop_toBottomOf="@+id/check_out" />
+
+    <TextView
+        android:id="@+id/jum_pengunjung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Jumlah Pengunjung"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out" />
+
+    <EditText
+        android:id="@+id/et_jum_pengunjung"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_shape"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/jum_pengunjung" />
+
+    <TextView
+        android:id="@+id/dtl_kontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Kontak Nomor HP"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/et_jum_pengunjung" />
+
+    <EditText
+        android:id="@+id/et_det_kontak"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/custom_shape"
+        android:backgroundTint="@color/green"
+        android:layout_marginTop="5dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/dtl_kontak" />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/Rectangle_bottom"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <TextView
+        android:id="@+id/total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="50dp"
+        android:fontFamily="@font/montserrat_regular"
+        android:text="Total"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <TextView
+        android:id="@+id/rp_total"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginBottom="30dp"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="Rp."
+        android:textColor="@color/black"
+        android:textSize="15sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Lanjutkan"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="20dp"
+        android:paddingStart="30dp"
+        android:paddingEnd="30dp"
+        android:textSize="16sp"
+        android:textColor="@color/white"
+        android:fontFamily="@font/montserrat_medium"
+        android:background="@drawable/button"
+        android:textAllCaps="false"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
