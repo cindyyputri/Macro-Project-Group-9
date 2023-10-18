@@ -13,6 +13,9 @@
         android:theme="@style/Theme.MacroChallenge9"
         tools:targetApi="31">
         <activity
+            android:name=".TambahWisataPengelolaActivity"
+            android:exported="false" />
+        <activity
             android:name=".TambahForumActivity"
             android:exported="false" />
         <activity
