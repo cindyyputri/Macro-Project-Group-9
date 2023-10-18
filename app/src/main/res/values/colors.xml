@@ -7,4 +7,5 @@
     <color name="semiBlack">#040404</color>
     <color name="navigasi">#D9D9D9</color>
     <color name="backgrounApp">#FAFAFB</color>
+    <color name="hint_pesan">#A0A0A0</color>
 </resources>
