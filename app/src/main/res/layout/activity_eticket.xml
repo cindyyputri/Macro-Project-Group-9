@@ -53,13 +53,13 @@
         android:id="@+id/img_des"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="70dp"
         android:layout_marginStart="40dp"
+        android:layout_marginTop="70dp"
         android:layout_marginEnd="40dp"
-        android:background="@drawable/MaskDestination"
+        android:background="@drawable/maskdestination"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/title_e_ticket"/>
+        app:layout_constraintTop_toBottomOf="@+id/title_e_ticket" />
 
     <TextView
         android:id="@+id/line"
