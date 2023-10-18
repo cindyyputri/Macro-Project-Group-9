@@ -10,7 +10,7 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="110dp"
-        android:background="@drawable/Rectangle_green"
+        android:background="@drawable/rectanglegreen"
         app:layout_constraintTop_toTopOf="parent"/>
 
     <ImageView
@@ -43,7 +43,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="100dp"
-        android:background="@drawable/Vector_tiket"
+        android:background="@drawable/vectortiket"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/title_e_ticket"

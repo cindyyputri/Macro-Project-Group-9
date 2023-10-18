@@ -4,35 +4,36 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/backgrounApp"
     tools:context=".ReservasiActivity">
 
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle_green"
-        app:layout_constraintTop_toTopOf="parent"/>
+        android:background="@drawable/rectanglegreen"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/image_back"
         android:layout_width="35dp"
         android:layout_height="35dp"
-        android:layout_marginTop="50dp"
         android:layout_marginStart="30dp"
-        app:srcCompat="@drawable/baseline_arrow_circle_left_24"
+        android:layout_marginTop="50dp"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
-        app:layout_constraintStart_toStartOf="parent"/>
+        app:srcCompat="@drawable/baseline_arrow_circle_left_24" />
 
 
     <TextView
         android:id="@+id/title_reservasi"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Pemesanan"
-        android:textSize="22sp"
+        android:layout_marginTop="50dp"
         android:fontFamily="@font/montserrat_bold"
+        android:text="Pemesanan"
         android:textAlignment="center"
         android:textColor="@color/black"
-        android:layout_marginTop="50dp"
+        android:textSize="22sp"
         app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
@@ -42,7 +43,7 @@
         android:layout_marginStart="30dp"
         android:layout_marginTop="130dp"
         android:layout_marginEnd="30dp"
-        android:background="@drawable/Rectangle_white"
+        android:background="@drawable/rectanglewhite"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
@@ -51,11 +52,11 @@
         android:id="@+id/image_destination"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@drawable/Mask_group"
-        android:layout_marginTop="100dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="100dp"
+        android:background="@drawable/maskgroup"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@id/title_reservasi"/>
+        app:layout_constraintTop_toTopOf="@id/title_reservasi" />
 
     <TextView
         android:id="@+id/title_dest"
@@ -87,30 +88,30 @@
         android:id="@+id/line"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="---------------------------------------------------------------------------------"
-        android:textSize="10sp"
-        android:fontFamily="@font/montserrat_medium"
-        android:textColor="@color/black"
         android:layout_marginStart="50dp"
         android:layout_marginEnd="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/desc_dest"
+        android:fontFamily="@font/montserrat_medium"
+        android:text="---------------------------------------------------------------------------------"
+        android:textColor="@color/black"
+        android:textSize="10sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/desc_dest" />
 
     <TextView
         android:id="@+id/check_in"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Check-in"
-        android:textSize="12sp"
-        android:fontFamily="@font/montserrat_semibold"
-        android:textColor="@color/black"
-        android:layout_marginTop="10dp"
         android:layout_marginStart="50dp"
+        android:layout_marginTop="10dp"
         android:layout_marginEnd="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/line"
+        android:fontFamily="@font/montserrat_semibold"
+        android:text="Check-in"
+        android:textColor="@color/black"
+        android:textSize="12sp"
+        app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintTop_toBottomOf="@+id/line" />
 
     <TextView
         android:id="@+id/check_out"
@@ -131,36 +132,36 @@
         android:id="@+id/img_info"
         android:layout_width="10dp"
         android:layout_height="10dp"
-        android:background="@drawable/Vector_informasi"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="50dp"
-        app:layout_constraintTop_toBottomOf="@+id/check_out"
-        app:layout_constraintStart_toStartOf="parent"/>
+        android:layout_marginTop="20dp"
+        android:background="@drawable/vectorinformasi"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/check_out" />
 
     <TextView
+        android:id="@+id/info"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/info"
+        android:layout_marginStart="5dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="Informasi Lengkap"
         android:textColor="@color/black"
         android:textSize="10sp"
-        android:layout_marginTop="18dp"
-        android:layout_marginStart="5dp"
         app:layout_constraintStart_toEndOf="@+id/img_info"
         app:layout_constraintTop_toBottomOf="@+id/check_out" />
 
     <TextView
+        android:id="@+id/ddetail"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:id="@+id/ddetail"
+        android:layout_marginStart="170dp"
+        android:layout_marginTop="18dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="Detail"
         android:textColor="@color/black"
-        android:textStyle="bold"
         android:textSize="10sp"
-        android:layout_marginTop="18dp"
-        android:layout_marginStart="170dp"
+        android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/info"
         app:layout_constraintTop_toBottomOf="@+id/check_out" />
 
@@ -168,8 +169,8 @@
         android:id="@+id/jum_pengunjung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="60dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="60dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Jumlah Pengunjung"
@@ -183,11 +184,11 @@
         android:id="@+id/et_jum_pengunjung"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/custom_shape"
         android:backgroundTint="@color/green"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/jum_pengunjung" />
@@ -196,8 +197,8 @@
         android:id="@+id/dtl_kontak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginEnd="30dp"
         android:fontFamily="@font/montserrat_semibold"
         android:text="Kontak Nomor HP"
@@ -211,11 +212,11 @@
         android:id="@+id/et_det_kontak"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:layout_marginStart="30dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="30dp"
         android:background="@drawable/custom_shape"
         android:backgroundTint="@color/green"
-        android:layout_marginTop="5dp"
-        android:layout_marginStart="30dp"
-        android:layout_marginEnd="30dp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toBottomOf="@+id/dtl_kontak" />
@@ -223,15 +224,15 @@
     <ImageView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:background="@drawable/Rectangle_bottom"
-        app:layout_constraintBottom_toBottomOf="parent"/>
+        android:background="@drawable/rectanglebottom"
+        app:layout_constraintBottom_toBottomOf="parent" />
 
     <TextView
         android:id="@+id/total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="50dp"
         android:fontFamily="@font/montserrat_regular"
         android:text="Total"
@@ -244,8 +245,8 @@
         android:id="@+id/rp_total"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
         android:layout_marginStart="30dp"
+        android:layout_marginTop="20dp"
         android:layout_marginBottom="30dp"
         android:fontFamily="@font/montserrat_medium"
         android:text="Rp."
@@ -258,17 +259,17 @@
         android:id="@+id/button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Lanjutkan"
         android:layout_marginEnd="30dp"
         android:layout_marginBottom="20dp"
+        android:background="@drawable/button"
+        android:fontFamily="@font/montserrat_medium"
         android:paddingStart="30dp"
         android:paddingEnd="30dp"
-        android:textSize="16sp"
-        android:textColor="@color/white"
-        android:fontFamily="@font/montserrat_medium"
-        android:background="@drawable/button"
+        android:text="Lanjutkan"
         android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"/>
+        app:layout_constraintEnd_toEndOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
