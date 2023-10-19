@@ -5,15 +5,28 @@ import android.content.Intent
 import android.os.Bundle
 import android.view.View
 import android.widget.Button
+import android.widget.EditText
 import android.widget.TextView
 import androidx.appcompat.app.AppCompatActivity
 
 
 class LoginActivity : AppCompatActivity(), View.OnClickListener {
+    private lateinit var edtEmail: EditText
+    private lateinit var edtPassword: EditText
+
     @SuppressLint("WrongViewCast")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_login)
+
+        edtEmail = findViewById(R.id.edt_email)
+        edtPassword = findViewById(R.id.edt_password)
+
+        val bundle = intent.extras
+        if (bundle != null) {
+            edtEmail.setText(bundle.getString("email"))
+            edtPassword.setText(bundle.getString("password"))
+        }
 
         val btnSignUp: TextView = findViewById(R.id.to_register2)
         btnSignUp.setOnClickListener{
